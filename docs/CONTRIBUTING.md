@@ -1,6 +1,7 @@
 # Contributing
 
 This projects follows:
+
 - [Conventional Commits](https://www.conventionalcommits.org/).
 - [Semantic Release](https://www.npmjs.com/package/semantic-release)
 
@@ -35,13 +36,13 @@ BREAKING CHANGE: endpoint `/auth` is removed
 
 ## Semantic Release
 
-semantic-release will parse the message and, depending on the type of commit, 
+semantic-release will parse the message and, depending on the type of commit,
 increment the version as follows:
 
 - `feat`: Will upgrade the minor version (e.g., from 1.0.0 to 1.1.0).
 - `fix`: Will upgrade the patch version (e.g., from 1.0.0 to 1.0.1).
 - If you have a commit of type `BREAKING CHANGE`, it will increase the major version (for example, from 1.0.0 to 2.0.0).
 
-When the commit goes through the semantic-release process, you should see that the version of your package.json and package-lock.json has been automatically updated, 
-and a new commit will have been created with the changes. 
+When the commit goes through the semantic-release process, you should see that the version of your package.json and package-lock.json has been automatically updated,
+and a new commit will have been created with the changes.
 Also, if you have a CHANGELOG.md file, this will also be updated with the release notes.
